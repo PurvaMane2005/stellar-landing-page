@@ -1,0 +1,12 @@
+.split-parent {
+  position: absolute;       /* or relative inside a full-size parent */
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  font-family: 'Figtree', sans-serif;
+  text-align: center;
+}

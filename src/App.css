@@ -1,0 +1,30 @@
+/* Make the whole app fill the screen */
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* Text wrapper centers text horizontally and vertically */
+.text-wrapper {
+  position: relative;
+  z-index: 2; /* in front of orb */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Optional: styling for the text */
+.animated-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  /* You can add shadows or glows if you want */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
