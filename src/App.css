@@ -4,6 +4,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 
@@ -28,3 +29,6 @@
   /* You can add shadows or glows if you want */
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
+
+
+
