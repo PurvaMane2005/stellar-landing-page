@@ -1,0 +1,260 @@
+.footer {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 4rem 2rem;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.footer-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.link-column {
+    min-width: 150px;
+}
+
+.link-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin-bottom: 0.75rem;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+
+.link-list a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 80px);
+    align-items: center;
+    padding: 1rem 4rem;
+    border-top: 1px solid grey;
+    box-sizing: border-box;
+    margin: 3rem 0px 0px 40px;
+    border-radius: 8px;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.legal-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.legal-links a {
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        padding: 1rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+/* Language Selector Styles */
+.language-section {
+    margin-top: 2rem;
+}
+
+.language-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.language-select-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+}
+
+.language-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-right: 2.5rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-size: 1rem;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.language-select:hover {
+    background-color: #3a3a3a;
+}
+
+.language-select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    background-color: #3a3a3a;
+}
+
+.language-select option {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #a0a0a0;
+    font-size: 0.75rem;
+}
+
+/* Social Icons */
+.social-section {
+    margin-top: 2rem;
+}
+
+.social-label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: grey;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* Inline Feedback Section */
+.inline-feedback {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0px 0px 25px 0;
+    padding: 0 1rem;
+    gap:3rem;
+}
+
+.star-rating {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.star-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #6c757d;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0 0.25rem;
+}
+
+.star-btn:hover,
+.star-btn.active {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.feedback-input-form {
+    flex: 1;
+    margin-left: 2rem;
+    max-width: 400px;
+}
+
+.feedback-input {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.feedback-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.feedback-input::placeholder {
+    color: #6c757d;
+}
