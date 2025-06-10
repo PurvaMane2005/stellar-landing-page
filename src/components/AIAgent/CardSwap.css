@@ -1,5 +1,5 @@
 .card-swap-container {
-  position: fixed;
+  position: relative;
   bottom: 0;
   right: 0;
   transform: translate(5%, 20%);
