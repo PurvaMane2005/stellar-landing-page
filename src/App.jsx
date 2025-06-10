@@ -8,6 +8,7 @@ import Feature from "./components/features/Feature";
 import ClickSpark from "./components/ClickSpark";
 import Moto from "./components/Moto/Moto";
 import AIAgent from "./components/AIAgent/AIAgent";
+import Button from "./components/Button/Button";
 
 
 
@@ -29,6 +30,8 @@ const App = () => {
         <Feature/>
 
         <AIAgent/>
+
+        <Button/>
 
         <Moto/>
         
