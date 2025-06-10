@@ -9,6 +9,7 @@ import ClickSpark from "./components/ClickSpark";
 import Moto from "./components/Moto/Moto";
 import AIAgent from "./components/AIAgent/AIAgent";
 import Button from "./components/Button/Button";
+import FeedBack from "./components/feedbackForm/FeedBack";
 
 
 
@@ -29,11 +30,12 @@ const App = () => {
 
         <Feature/>
 
-        <AIAgent/>
+     
 
         <Button/>
 
         <Moto/>
+        <FeedBack/>
         
       </ClickSpark >
     </div>
