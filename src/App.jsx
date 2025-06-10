@@ -3,10 +3,10 @@ import Orb from "./components/Orb/Orb";
 import SplitText from "./components/SplitText/SplitText"; // or './SplitText' if that's the filename
 
 import ScrollVelocity from './components/ScrollVelocity/ScrollVelocity'; // or './
-import CardSwap, { Card } from './components/AIAgent/CardSwap'; // or './CardSwap' if that's the filename
+
 import Feature from "./components/features/Feature";
 import ClickSpark from "./components/ClickSpark";
-import TrueFocus from "./components/AIAgent/TrueFocus";
+import Moto from "./components/Moto/Moto";
 import AIAgent from "./components/AIAgent/AIAgent";
 
 
@@ -29,6 +29,8 @@ const App = () => {
         <Feature/>
 
         <AIAgent/>
+
+        <Moto/>
         
       </ClickSpark >
     </div>
