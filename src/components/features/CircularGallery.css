@@ -1,0 +1,20 @@
+/* CircularGallery.css */
+
+.circular-gallery {
+  position: relative; /* Changed from fixed to allow scrolling */
+  width: 100%;       /* Take full width of parent */
+  height: 80vh;     /* Be as tall as the viewport */
+  overflow: hidden;
+  touch-action: pan-y; /* Allow vertical scrolling on touch devices if needed */
+  cursor: grab;
+}
+
+.circular-gallery:active {
+  cursor: grabbing;
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}

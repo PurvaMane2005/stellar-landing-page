@@ -1,8 +1,11 @@
 import React from "react";
 import Orb from "./components/Orb/Orb";
 import SplitText from "./components/SplitText/SplitText"; // or './SplitText' if that's the filename
-import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity"; // or './
-import CardSwap, { Card } from "./components/AIAgent/CardSwap"; // or './CardSwap' if that's the filename
+
+import ScrollVelocity from './components/ScrollVelocity/ScrollVelocity'; // or './
+import CardSwap, { Card } from './components/AIAgent/CardSwap'; // or './CardSwap' if that's the filename
+import Feature from "./components/features/Feature";
+
 const App = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
