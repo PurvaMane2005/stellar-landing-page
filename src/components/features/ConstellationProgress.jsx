@@ -18,8 +18,8 @@ export default function ConstellationProgress() {
   const progressPath = stars.slice(0, 5).map((s, i) => `${i === 0 ? 'M' : 'L'} ${s.x},${s.y}`).join(' ');
 
   return (
-    <div className="relative">
-      <svg ref={svgRef} width="600" height="200" viewBox="0 0 600 200">
+    <div className="relative" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+      <svg ref={svgRef} width="600" height="200" viewBox="-150 0 600 200" >
         {/* Faint base line */}
         <path d={fullPath} stroke="white" strokeOpacity="0.2" fill="none" strokeWidth="1" />
 
@@ -42,7 +42,7 @@ export default function ConstellationProgress() {
         )}
       </svg>
 
-      <p className="text-center mt-4 text-sm text-white/70">Progress through constellation</p>
+      
     </div>
   );
 }

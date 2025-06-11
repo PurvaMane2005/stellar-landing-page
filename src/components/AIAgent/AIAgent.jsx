@@ -15,6 +15,7 @@ const AIAgent = () => {
         pauseBetweenAnimations={1}
       />
 
+
       <div style={styles.cardSection}>
         <CardSwap
           cardDistance={60}
@@ -55,6 +56,7 @@ const AIAgent = () => {
         </CardSwap>
       </div>
     </div>
+    
   );
 };
 
@@ -74,6 +76,8 @@ const styles = {
     maxWidth: '1000px',
     overflow: 'auto',
     paddingBottom: '5rem',
+    display: 'flex',
+  justifyContent: 'flex-end',
   },
   heading: {
     margin: "10px",
@@ -83,7 +87,7 @@ const styles = {
   },
   image: {
     width: "100%",
-    padding: "20px",
+    padding: "10px",
     borderRadius: "12px",
   },
 };

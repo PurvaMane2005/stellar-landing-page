@@ -17,7 +17,7 @@ export default function FeatureTwo() {
     <div>
       <h1>
         <BlurText
-          text="   Blogs & Articles"
+          text=" Blogs & Articles"
           delay={150}
           animateBy="words"
           direction="top"
