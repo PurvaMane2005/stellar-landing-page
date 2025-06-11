@@ -53,6 +53,7 @@ const AIAgent = () => {
               />
             </Card>
 
+
             <Card>
               <h3 className="heading">Slide 3</h3>
               <img
@@ -65,7 +66,42 @@ const AIAgent = () => {
         </div>
       </div>
     </div>
+    
   );
 };
+
+
+const styles = {
+  pageWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '4rem 1rem',
+    overflowX: 'hidden',
+    background: '#000',
+    color: '#fff',
+  },
+  cardSection: {
+    marginTop: '3rem',
+    width: '100%',
+    maxWidth: '1000px',
+    overflow: 'auto',
+    paddingBottom: '5rem',
+    display: 'flex',
+  justifyContent: 'flex-end',
+  },
+  heading: {
+    margin: "10px",
+    color: "white",
+    textAlign: "left",
+    paddingLeft: "10px",
+  },
+  image: {
+    width: "100%",
+    padding: "10px",
+    borderRadius: "12px",
+  },
+};
+
 
 export default AIAgent;

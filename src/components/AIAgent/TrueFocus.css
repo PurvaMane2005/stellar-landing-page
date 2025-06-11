@@ -5,11 +5,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .focus-word {
   position: relative;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 900;
   cursor: pointer;
   transition:

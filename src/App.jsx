@@ -1,17 +1,15 @@
-
+//nikhar orb
 import React,{ useState,useEffect } from "react";
 import { motion,AnimatePresence } from "framer-motion";
 
 // Global visual effect
+import Feature from "./components/features/Feature";
 import ClickSpark from "./components/ClickSpark";
-
 // Navigation
 import Navbar from "./components/Navbar/Navbar";
-
 // Hero Section
 import Orb from "./components/Orb/Orb";
 import SplitText from "./components/SplitText/SplitText";
-
 // Features
 import FeatureOne from "./components/features/FeatureOne";
 import FeatureTwo from "./components/features/FeatureTwo";
@@ -44,6 +42,8 @@ import Stepper,{ Step } from "./components/feedbackForm/Stepper";
 // Footer
 import Footer from "./components/Footer/Footer";
 
+import EarlyAccess from "./components/EarlyAccess/EarlyAccess";
+  
 const App = () => {
   const [name,setName] = useState("");
   const [showContent,setShowContent] = useState(false);
@@ -141,6 +141,7 @@ const App = () => {
               >
                 {/* Feature One */}
                 <div className="feature-one space-y-8">
+
                   <FeatureOne />
                 </div>
 
@@ -161,15 +162,15 @@ const App = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1,delay: 1.2 }}
+
+                transition={{ duration: 1,delay: 1 }}
                 className="py-20"
               >
-                <ScrollVelocity texts={['React Bits','Scroll Down']} velocity={0.3} className="text-3xl font-bold" />
+                <ScrollVelocity texts={['React Bits','Scroll Down']} velocity={100} className="text-3xl font-bold" />
               </motion.div>
 
               {/* AI Agent Section */}
-             <div>
-               <motion.section
+              <motion.section
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1,delay: 1.4 }}
@@ -177,11 +178,12 @@ const App = () => {
                 className="space-y-12 py-20 px-4"
               >
                 
-                <AIAgent /> 
-                <CardSwap cardDistance={60} verticalDistance={70} delay={5000} pauseOnHover={false}>
-                </CardSwap>
+                <AIAgent />
+                <div className="relative h-[600px]">
+                  <CardSwap cardDistance={60} verticalDistance={70} delay={5000} pauseOnHover={false}>
+                  </CardSwap>
+                </div>
               </motion.section>
-             </div>
 
               {/* Rest of the sections with motion animations */}
               <motion.div
@@ -189,6 +191,10 @@ const App = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1,delay: 1.6 }}
               >
+                {/* CTA Button Section */}
+                <section id="cta-button" className="py-16 px-4 text-center space-y-6">
+                  <Button />
+                </section>
 
                 {/* Moto Section */}
                 <section id="moto" className="py-24 px-4 bg-gray-900 text-white text-center">
