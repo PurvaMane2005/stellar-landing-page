@@ -1,18 +1,23 @@
 
+
 //nikhar orb
 import React,{ useState,useEffect } from "react";
 import { motion,AnimatePresence } from "framer-motion";
 
 // Global visual effect
-import ClickSpark from "./components/ClickSpark";
 
+// src/App.jsx
+
+import Orb from "./components/Orb/Orb";
+import SplitText from "./components/SplitText/SplitText";
+import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
+import Feature from "./components/features/Feature";
+import ClickSpark from "./components/ClickSpark";
 // Navigation
 import Navbar from "./components/Navbar/Navbar";
-
 // Hero Section
 import Orb from "./components/Orb/Orb";
 import SplitText from "./components/SplitText/SplitText";
-
 // Features
 import FeatureOne from "./components/features/FeatureOne";
 import FeatureTwo from "./components/features/FeatureTwo";
@@ -21,15 +26,12 @@ import CircularGallery from "./components/features/CircularGallery";
 import Carousel from "./components/features/Carousel";
 import ConstellationProgress from "./components/features/ConstellationProgress";
 import BlurText from "./components/features/BlurText";
-
 // Scroll Transition
 import ScrollVelocity from './components/ScrollVelocity/ScrollVelocity';
-
 // AI Agent Section
 import AIAgent from "./components/AIAgent/AIAgent";
 import CardSwap,{ Card } from './components/AIAgent/CardSwap';
 import TrueFocus from './components/AIAgent/TrueFocus';
-
 // Button
 import Button from "./components/Button/Button";
 import StarBorder from "./components/Button/StarBorder";
@@ -44,11 +46,14 @@ import Stepper,{ Step } from "./components/feedbackForm/Stepper";
 
 // Footer
 import Footer from "./components/Footer/Footer";
-
+import FeedBack from "./components/feedbackForm/FeedBack";
+import EarlyAccess from "./components/EarlyAccess/EarlyAccess";
+  
 const App = () => {
   const [name,setName] = useState("");
   const [showContent,setShowContent] = useState(false);
   const [initialOrbAnimation,setInitialOrbAnimation] = useState(true);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     // Start showing content after 5 seconds
