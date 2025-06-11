@@ -1,5 +1,4 @@
 
-
 //nikhar orb
 import React,{ useState,useEffect } from "react";
 import { motion,AnimatePresence } from "framer-motion";
@@ -8,9 +7,6 @@ import { motion,AnimatePresence } from "framer-motion";
 
 // src/App.jsx
 
-import Orb from "./components/Orb/Orb";
-import SplitText from "./components/SplitText/SplitText";
-import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
 import Feature from "./components/features/Feature";
 import ClickSpark from "./components/ClickSpark";
 // Navigation
@@ -46,7 +42,7 @@ import Stepper,{ Step } from "./components/feedbackForm/Stepper";
 
 // Footer
 import Footer from "./components/Footer/Footer";
-import FeedBack from "./components/feedbackForm/FeedBack";
+
 import EarlyAccess from "./components/EarlyAccess/EarlyAccess";
   
 const App = () => {
@@ -168,10 +164,10 @@ const App = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1,delay: 1.2 }}
+                transition={{ duration: 1,delay: 1 }}
                 className="py-20"
               >
-                <ScrollVelocity texts={['React Bits','Scroll Down']} velocity={0.3} className="text-3xl font-bold" />
+                <ScrollVelocity texts={['React Bits','Scroll Down']} velocity={100} className="text-3xl font-bold" />
               </motion.div>
 
               {/* AI Agent Section */}
