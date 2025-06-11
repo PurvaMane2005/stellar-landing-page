@@ -1,12 +1,8 @@
-
 //nikhar orb
 import React,{ useState,useEffect } from "react";
 import { motion,AnimatePresence } from "framer-motion";
 
 // Global visual effect
-
-// src/App.jsx
-
 import Feature from "./components/features/Feature";
 import ClickSpark from "./components/ClickSpark";
 // Navigation
@@ -22,12 +18,15 @@ import CircularGallery from "./components/features/CircularGallery";
 import Carousel from "./components/features/Carousel";
 import ConstellationProgress from "./components/features/ConstellationProgress";
 import BlurText from "./components/features/BlurText";
+
 // Scroll Transition
 import ScrollVelocity from './components/ScrollVelocity/ScrollVelocity';
+
 // AI Agent Section
 import AIAgent from "./components/AIAgent/AIAgent";
 import CardSwap,{ Card } from './components/AIAgent/CardSwap';
 import TrueFocus from './components/AIAgent/TrueFocus';
+
 // Button
 import Button from "./components/Button/Button";
 import StarBorder from "./components/Button/StarBorder";
@@ -49,7 +48,6 @@ const App = () => {
   const [name,setName] = useState("");
   const [showContent,setShowContent] = useState(false);
   const [initialOrbAnimation,setInitialOrbAnimation] = useState(true);
-  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     // Start showing content after 5 seconds
@@ -143,7 +141,7 @@ const App = () => {
               >
                 {/* Feature One */}
                 <div className="feature-one space-y-8">
-                  
+
                   <FeatureOne />
                 </div>
 
@@ -164,6 +162,7 @@ const App = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+
                 transition={{ duration: 1,delay: 1 }}
                 className="py-20"
               >
